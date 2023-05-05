@@ -32,6 +32,26 @@ enableSourceMap = true
 
 ---
 
+## Countermeasures
+
+### Specifically for data science and computer science
+
+* Make your artifacts *available*
+  * Share code as open source (**licensing**)
+  * Share code and data where people will find it (**GitHub**)
+  * Share code and data where it will be archived for the forseeable future (**Zenodo**)
+* Make your artifacts *reproducible*
+  * It works on your PC? Ship your PC! (**containerization**)
+* Make your artifacts *maintainable*
+  * Be ready to accept contributions and work in team (**version control**)
+  * Always check that the software is working (**continuous integration**)
+* Make your artifacts *reusable*
+  * document them appropriately (**GitHub Pages**)
+
+Most techniques come from the DevOps world!
+
+---
+
 <!-- write-here "shared-slides/devops/devops-intro.md" -->
 
 <!-- end-write -->

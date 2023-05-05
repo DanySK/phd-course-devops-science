@@ -1,6 +1,6 @@
-baseURL = "https://danysk.github.io/Template-Hugo-Reveal-Slides"
+baseURL = "https://danysk.github.io/phd-course-devops-science"
 languageCode = "en-us"
-title = "A Hugo theme for creating Reveal.js presentations"
+title = "DevOps for Scientific Research"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"

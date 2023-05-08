@@ -39,7 +39,7 @@ enableSourceMap = true
 * Make your artifacts *available*
   * Share code as open source (**licensing**)
   * Share code and data where people will find it (**GitHub**)
-  * Share code and data where it will be archived for the forseeable future (**Zenodo**)
+  * Share code and data where it will be archived for the foreseeable future (**Zenodo**)
 * Make your artifacts *reproducible*
   * It works on your PC? Ship your PC! (**containerization**)
 * Make your artifacts *maintainable*
@@ -52,12 +52,114 @@ Most techniques come from the DevOps world!
 
 ---
 
+## Course contents
+
+### Specifically for data science and computer science
+
+* Version control with **git**
+* Share code on **GitHub**
+* Continuous integration in **GitHub Actions**
+* Containerization via **Docker**
+* Archive your artifacts on **Zenodo**
+* Licensing
+* Create documentation on **GitHub Pages**
+
+---
+
+## Course exam
+
+**Create a reusable artifact**
+* If you have a paper that is being submitted, create the artifact for it and it counts as a valid exam (if done properly)
+* if you don't, then a toy project is fine as well
+
+### Must-have
+* Version control
+* Appropriate License
+* Continuous Integration
+* Containerization
+* Zenodo archiving
+* GitHub Pages documentation
+
+---
+
 <!-- write-here "shared-slides/devops/devops-intro.md" -->
 
 <!-- end-write -->
 
 ---
 
-<!-- write-here "shared-slides/devops/real-world-case.md" -->
+# Version control with git
+
+---
+
+<!-- write-here "shared-slides/git/dvcs-concepts.md" -->
 
 <!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/intro.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/basics-no-branching.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/branching-merging.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/merge-exercise.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/branch-deletion.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/remote-operations.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/tagging-basics.md" -->
+
+<!-- end-write -->
+
+---
+
+<!-- write-here "shared-slides/git/git-hosting-github.md" -->
+
+<!-- end-write -->
+
+---
+
+# Continuous Integration
+
+---
+
+# Containerization
+
+---
+
+# Archival copies
+
+---
+
+# Licenses
+
+---
+
+# GitHub Pages

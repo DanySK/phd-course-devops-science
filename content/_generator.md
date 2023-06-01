@@ -146,9 +146,19 @@ Most techniques come from the DevOps world!
 
 ---
 
-# Continuous Integration
+<!-- write-here "shared-slides/ci/intro.md" -->
+
+<!-- end-write -->
 
 ---
+
+<!-- write-here "shared-slides/ci/core-concepts.md" -->
+
+<!-- end-write -->
+
+
+---
+
 
 # Containerization
 

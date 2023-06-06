@@ -1,7 +1,7 @@
 +++
 
-title = "Development + Operations"
-description = "No silos"
+title = "DevOps for scientific research"
+description = "Reproducibility and replicability in scientific research, enforced."
 outputs = ["Reveal"]
 
 [reveal_hugo.custom_theme_options]
@@ -10,7 +10,7 @@ enableSourceMap = true
 
 +++
 
-# DevOps for scientific research
+# DevOps meets scientific research
 
 ## *Danilo Pianini*
 
@@ -368,8 +368,55 @@ Your image can now be pulled by anyone!
 
 ---
 
+## Open Science
+
+* Open Science is a movement that aims to make scientific research,
+data, and dissemination accessible to all levels of society
+* A relevant part of Open Science is *accessibility* and *reproducibility*
+* Public services exist that take snapshots of scientific artifacts and store them for the future, e.g.:
+  * [Zenodo](https://zenodo.org/)
+  * [Software Heritage](https://www.softwareheritage.org/)
+
+Artefacts that are not archived are at a **high risk of being lost forever**!
+
+With them, away goes the possibility of reproducing the results.
+
+---
+
+## Zenodo
+
+Zenodo is a service that allows to archive and share scientific artifacts.
+Its key features are:
+* **Permanent** storage
+* **DOI** assignment
+* **GitHub integration**
+* Managed by **CERN**
+* No cost
+
+### Archiving a repository on Zenodo
+
+To automatically archive a repository on Zenodo:
+1. *Connect* your GitHub account to Zenodo
+2. In the project list of Zenodo, *enable* the repository to archive
+3. Done! Every new *release* on GitHub will be archived on Zenodo
+  * So, of course, make the releases on GitHub *automatic*!
+
+---
+
 # Licenses
 
 ---
 
+<!-- write-here "shared-slides/licenses.md" -->
+
+<!-- end-write -->
+
+---
+
 # GitHub Pages
+
+---
+
+<!-- write-here "shared-slides/ci/ghpages.md" -->
+
+<!-- end-write -->

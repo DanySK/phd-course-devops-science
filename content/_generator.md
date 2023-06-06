@@ -294,11 +294,73 @@ CMD ["executable", "parameter", "parameter2"]
 
 ---
 
-## Building and sharing images
+## Tagging images
 
-`docker build`
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-docker push
+Tagging is the operation of adding custom symbolic names (aliases) to images
+
+`docker [image] tag <source_image> <target_image>`
+
+Creates an alias for `<source_image>` named `<target_image>`
+
+* "`image`" can be omitted
+
+Tags are usually structured as `name:version`
+  * `name` is typically in the form `owner_name/image_name`
+    * *official* images have no `owner_name/`
+  * `version` can be any string, but:
+    * `latest` is a special version that identifies the most recent image
+    * versions are normally assigned as numbers with dot separators (e.g., `3.10`)
+      * Typically these numbers match those of the software inside the container
+        * e.g., image `python:3.10` contains the Python interpreter at version `3.10`
+    * additional information is stored in a dash-prefixed suffix
+      * e.g., image `python:3.10-buster` contains the Python interpreter at version `3.10` and the runtime of *Debian Buster*
+
+---
+
+## Building images
+
+`docker [image] build <options> <directory>`
+
+Creates a new `image` from a directory containing a `Dockerfile`
+* "`image`" can be omitted
+* if launched from where the `Dockerfile` located:
+  * `docker build .`
+
+### Options
+
+* `-t <tag>` --- adds tag `<tag>` to the image. Multiple tags can be specified.
+
+#### Typical build command:
+* `docker build -t my_name/my_project:latest -t my_name/my_project:1.0.0 .`
+
+---
+
+## Sharing images: selecting a registry and logging in
+
+Images are fetched and stored in **registries**
+* The most common registry for docker is `dockerhub.io`
+* GitHub also has an [image registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry), `ghcr.io`
+
+### Logging into a registry
+
+`docker login <registry>`
+* If `<registry>` is omitted, `dockerhub.io` is used
+* Interactive login: `docker login <registry>`
+* Non-interactive login
+  * `docker login -u <username> -p <password> <registry>`
+  * (better) `cat <password> | docker login -u <username> --password-stdin <registry>`
+
+---
+
+## Sharing images: pushing images
+
+### Pushing images
+
+`docker push <image>`
+* Pushes `<image>` to the registry the user is currently logged into
+* If your username is `<user>`, then the image must be tagged as `<user>/<name>:<version>`
+
+Your image can now be pulled by anyone!
 
 ---
 

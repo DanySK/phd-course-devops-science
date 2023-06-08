@@ -14,9 +14,13 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions: { }
+
 jobs:
   Build-Slides:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Checkout the repository
       - name: Checkout
